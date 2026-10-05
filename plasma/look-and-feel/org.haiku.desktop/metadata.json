@@ -1,0 +1,16 @@
+{
+    "KPackageStructure": "Plasma/LookAndFeel",
+    "KPlugin": {
+        "Authors": [ { "Name": "Gerald Greiling" } ],
+        "Category": "",
+        "Description": "Global theme inspired by the Haiku / BeOS desktop: yellow window tabs, grey bevelled widgets, blue desktop",
+        "Description[de]": "Globales Design im Stil von Haiku / BeOS: gelbe Fenster-Reiter, graue Bevel-Widgets, blauer Desktop",
+        "Id": "org.haiku.desktop",
+        "License": "MIT",
+        "Name": "Haiku",
+        "Version": "1.0.0",
+        "Website": "https://github.com/geraldgreiling/haiku-plasma-theme"
+    },
+    "Keywords": "Desktop;Workspace;Appearance;Look and Feel;Haiku;BeOS;",
+    "X-Plasma-APIVersion": "2"
+}

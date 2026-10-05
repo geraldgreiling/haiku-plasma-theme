@@ -1,0 +1,38 @@
+# Maintainer: Gerald <gerald dot greiling at gmail dot com>
+
+pkgname=haiku-plasma-theme-plugins
+_reponame=haiku-plasma-theme
+pkgver=1.0.0
+pkgrel=1
+pkgdesc="Haiku/BeOS look for KDE Plasma 6: Qt6 widget style and KWin window decoration with the classic yellow tab"
+arch=('x86_64' 'aarch64')
+url="https://github.com/geraldgreiling/${_reponame}"
+license=('MIT')
+depends=('qt6-base' 'kdecoration>=6.3' 'kcoreaddons' 'kwin' 'gcc-libs' 'glibc')
+makedepends=('cmake')
+optdepends=('plasma-workspace: apply the Haiku global theme from store.kde.org')
+source=("${pkgname}-${pkgver}.tar.gz::${url}/archive/refs/tags/v${pkgver}.tar.gz")
+sha256sums=('SKIP')  # nach dem Taggen mit "updpkgsums" ersetzen
+
+build() {
+  local _src="${_reponame}-${pkgver}"
+  cmake -B build-style -S "${_src}/style" \
+    -DCMAKE_BUILD_TYPE=None \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DHAIKU_QT_PLUGIN_DIR=/usr/lib/qt6/plugins \
+    -Wno-dev
+  cmake --build build-style
+
+  cmake -B build-deco -S "${_src}/decoration" \
+    -DCMAKE_BUILD_TYPE=None \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DHAIKU_QT_PLUGIN_DIR=/usr/lib/qt6/plugins \
+    -Wno-dev
+  cmake --build build-deco
+}
+
+package() {
+  DESTDIR="${pkgdir}" cmake --install build-style
+  DESTDIR="${pkgdir}" cmake --install build-deco
+  install -Dm644 "${_reponame}-${pkgver}/LICENSE" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+}

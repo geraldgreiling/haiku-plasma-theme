@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="96" viewBox="0 0 140 96">
+<g id="normal-topleft"><rect x="2" y="2" width="1" height="1" fill="rgba(0,0,0,0.000)"/><rect x="2" y="2" width="1" height="1" fill="rgba(0,0,0,0.000)"/></g>
+<g id="normal-top"><rect x="3" y="2" width="12" height="1" fill="rgba(0,0,0,0.000)"/></g>
+<g id="normal-topright"><rect x="15" y="2" width="1" height="1" fill="rgba(0,0,0,0.000)"/><rect x="15" y="2" width="1" height="1" fill="rgba(0,0,0,0.000)"/></g>
+<g id="normal-left"><rect x="2" y="3" width="1" height="12" fill="rgba(0,0,0,0.000)"/></g>
+<g id="normal-center"><rect x="3" y="3" width="12" height="12" fill="none"/></g>
+<g id="normal-right"><rect x="15" y="3" width="1" height="12" fill="rgba(0,0,0,0.000)"/></g>
+<g id="normal-bottomleft"><rect x="2" y="15" width="1" height="1" fill="rgba(0,0,0,0.000)"/><rect x="2" y="15" width="1" height="1" fill="rgba(0,0,0,0.000)"/></g>
+<g id="normal-bottom"><rect x="3" y="15" width="12" height="1" fill="rgba(0,0,0,0.000)"/></g>
+<g id="normal-bottomright"><rect x="15" y="15" width="1" height="1" fill="rgba(0,0,0,0.000)"/><rect x="15" y="15" width="1" height="1" fill="rgba(0,0,0,0.000)"/></g>
+<rect id="normal-hint-top-margin" x="20" y="2" width="4" height="2" fill="none"/>
+<rect id="normal-hint-bottom-margin" x="26" y="2" width="4" height="2" fill="none"/>
+<rect id="normal-hint-left-margin" x="32" y="2" width="4" height="4" fill="none"/>
+<rect id="normal-hint-right-margin" x="32" y="8" width="4" height="4" fill="none"/>
+<g id="hover-topleft"><rect x="2" y="24" width="1" height="1" fill="#e9e9e9"/><rect x="2" y="24" width="1" height="1" fill="#a2a2a2"/><rect x="2" y="24" width="1" height="1" fill="#a2a2a2"/></g>
+<g id="hover-top"><rect x="3" y="24" width="12" height="1" fill="#e9e9e9"/><rect x="3" y="24" width="12" height="1" fill="#a2a2a2"/></g>
+<g id="hover-topright"><rect x="15" y="24" width="1" height="1" fill="#e9e9e9"/><rect x="15" y="24" width="1" height="1" fill="#a2a2a2"/><rect x="15" y="24" width="1" height="1" fill="#a2a2a2"/></g>
+<g id="hover-left"><rect x="2" y="25" width="1" height="12" fill="#e9e9e9"/><rect x="2" y="25" width="1" height="12" fill="#a2a2a2"/></g>
+<g id="hover-center"><rect x="3" y="25" width="12" height="12" fill="#e9e9e9"/></g>
+<g id="hover-right"><rect x="15" y="25" width="1" height="12" fill="#e9e9e9"/><rect x="15" y="25" width="1" height="12" fill="#a2a2a2"/></g>
+<g id="hover-bottomleft"><rect x="2" y="37" width="1" height="1" fill="#e9e9e9"/><rect x="2" y="37" width="1" height="1" fill="#a2a2a2"/><rect x="2" y="37" width="1" height="1" fill="#a2a2a2"/></g>
+<g id="hover-bottom"><rect x="3" y="37" width="12" height="1" fill="#e9e9e9"/><rect x="3" y="37" width="12" height="1" fill="#a2a2a2"/></g>
+<g id="hover-bottomright"><rect x="15" y="37" width="1" height="1" fill="#e9e9e9"/><rect x="15" y="37" width="1" height="1" fill="#a2a2a2"/><rect x="15" y="37" width="1" height="1" fill="#a2a2a2"/></g>
+<rect id="hover-hint-top-margin" x="20" y="24" width="4" height="2" fill="none"/>
+<rect id="hover-hint-bottom-margin" x="26" y="24" width="4" height="2" fill="none"/>
+<rect id="hover-hint-left-margin" x="32" y="24" width="4" height="4" fill="none"/>
+<rect id="hover-hint-right-margin" x="32" y="30" width="4" height="4" fill="none"/>
+<g id="selected-topleft"><rect x="2" y="46" width="2" height="2" fill="#bebebe"/><rect x="2" y="46" width="2" height="1" fill="#7b7b7b"/><rect x="2" y="46" width="1" height="2" fill="#7b7b7b"/><rect x="3" y="47" width="1" height="1" fill="#aeaeae"/><rect x="3" y="47" width="1" height="1" fill="#aeaeae"/></g>
+<g id="selected-top"><rect x="4" y="46" width="12" height="2" fill="#bebebe"/><rect x="4" y="46" width="12" height="1" fill="#7b7b7b"/><rect x="4" y="47" width="12" height="1" fill="#aeaeae"/></g>
+<g id="selected-topright"><rect x="16" y="46" width="2" height="2" fill="#bebebe"/><rect x="16" y="46" width="2" height="1" fill="#7b7b7b"/><rect x="17" y="46" width="1" height="2" fill="#7b7b7b"/><rect x="16" y="47" width="1" height="1" fill="#aeaeae"/><rect x="16" y="47" width="1" height="1" fill="#d8d8d8"/></g>
+<g id="selected-left"><rect x="2" y="48" width="2" height="12" fill="#bebebe"/><rect x="2" y="48" width="1" height="12" fill="#7b7b7b"/><rect x="3" y="48" width="1" height="12" fill="#aeaeae"/></g>
+<g id="selected-center"><rect x="4" y="48" width="12" height="12" fill="#bebebe"/></g>
+<g id="selected-right"><rect x="16" y="48" width="2" height="12" fill="#bebebe"/><rect x="17" y="48" width="1" height="12" fill="#7b7b7b"/><rect x="16" y="48" width="1" height="12" fill="#d8d8d8"/></g>
+<g id="selected-bottomleft"><rect x="2" y="60" width="2" height="2" fill="#bebebe"/><rect x="2" y="60" width="1" height="2" fill="#7b7b7b"/><rect x="2" y="61" width="2" height="1" fill="#7b7b7b"/><rect x="3" y="60" width="1" height="1" fill="#aeaeae"/><rect x="3" y="60" width="1" height="1" fill="#d8d8d8"/></g>
+<g id="selected-bottom"><rect x="4" y="60" width="12" height="2" fill="#bebebe"/><rect x="4" y="61" width="12" height="1" fill="#7b7b7b"/><rect x="4" y="60" width="12" height="1" fill="#d8d8d8"/></g>
+<g id="selected-bottomright"><rect x="16" y="60" width="2" height="2" fill="#bebebe"/><rect x="16" y="61" width="2" height="1" fill="#7b7b7b"/><rect x="17" y="60" width="1" height="2" fill="#7b7b7b"/><rect x="16" y="60" width="1" height="1" fill="#d8d8d8"/><rect x="16" y="60" width="1" height="1" fill="#d8d8d8"/></g>
+<rect id="selected-hint-top-margin" x="22" y="46" width="4" height="2" fill="none"/>
+<rect id="selected-hint-bottom-margin" x="28" y="46" width="4" height="2" fill="none"/>
+<rect id="selected-hint-left-margin" x="34" y="46" width="4" height="4" fill="none"/>
+<rect id="selected-hint-right-margin" x="34" y="52" width="4" height="4" fill="none"/>
+<g id="selected+hover-topleft"><rect x="2" y="70" width="2" height="2" fill="#b4b4b4"/><rect x="2" y="70" width="2" height="1" fill="#686868"/><rect x="2" y="70" width="1" height="2" fill="#686868"/><rect x="3" y="71" width="1" height="1" fill="#a1a1a1"/><rect x="3" y="71" width="1" height="1" fill="#a1a1a1"/></g>
+<g id="selected+hover-top"><rect x="4" y="70" width="12" height="2" fill="#b4b4b4"/><rect x="4" y="70" width="12" height="1" fill="#686868"/><rect x="4" y="71" width="12" height="1" fill="#a1a1a1"/></g>
+<g id="selected+hover-topright"><rect x="16" y="70" width="2" height="2" fill="#b4b4b4"/><rect x="16" y="70" width="2" height="1" fill="#686868"/><rect x="17" y="70" width="1" height="2" fill="#686868"/><rect x="16" y="71" width="1" height="1" fill="#a1a1a1"/><rect x="16" y="71" width="1" height="1" fill="#d2d2d2"/></g>
+<g id="selected+hover-left"><rect x="2" y="72" width="2" height="12" fill="#b4b4b4"/><rect x="2" y="72" width="1" height="12" fill="#686868"/><rect x="3" y="72" width="1" height="12" fill="#a1a1a1"/></g>
+<g id="selected+hover-center"><rect x="4" y="72" width="12" height="12" fill="#b4b4b4"/></g>
+<g id="selected+hover-right"><rect x="16" y="72" width="2" height="12" fill="#b4b4b4"/><rect x="17" y="72" width="1" height="12" fill="#686868"/><rect x="16" y="72" width="1" height="12" fill="#d2d2d2"/></g>
+<g id="selected+hover-bottomleft"><rect x="2" y="84" width="2" height="2" fill="#b4b4b4"/><rect x="2" y="84" width="1" height="2" fill="#686868"/><rect x="2" y="85" width="2" height="1" fill="#686868"/><rect x="3" y="84" width="1" height="1" fill="#a1a1a1"/><rect x="3" y="84" width="1" height="1" fill="#d2d2d2"/></g>
+<g id="selected+hover-bottom"><rect x="4" y="84" width="12" height="2" fill="#b4b4b4"/><rect x="4" y="85" width="12" height="1" fill="#686868"/><rect x="4" y="84" width="12" height="1" fill="#d2d2d2"/></g>
+<g id="selected+hover-bottomright"><rect x="16" y="84" width="2" height="2" fill="#b4b4b4"/><rect x="16" y="85" width="2" height="1" fill="#686868"/><rect x="17" y="84" width="1" height="2" fill="#686868"/><rect x="16" y="84" width="1" height="1" fill="#d2d2d2"/><rect x="16" y="84" width="1" height="1" fill="#d2d2d2"/></g>
+<rect id="selected+hover-hint-top-margin" x="22" y="70" width="4" height="2" fill="none"/>
+<rect id="selected+hover-hint-bottom-margin" x="28" y="70" width="4" height="2" fill="none"/>
+<rect id="selected+hover-hint-left-margin" x="34" y="70" width="4" height="4" fill="none"/>
+<rect id="selected+hover-hint-right-margin" x="34" y="76" width="4" height="4" fill="none"/>
+</svg>

@@ -1,0 +1,14 @@
+{
+  "KPlugin": {
+    "Id": "__aurorae__svg__Haiku",
+    "Name": "Haiku (Aurorae fallback)",
+    "Description": "Haiku-like decoration without compiled plugin (full-width title bar)",
+    "Authors": [
+      {
+        "Name": "Gerald Greiling"
+      }
+    ],
+    "License": "MIT",
+    "Version": "1.0.0"
+  }
+}

@@ -1,0 +1,20 @@
+{
+    "KPackageStructure": "Plasma/Theme",
+    "KPlugin": {
+        "Id": "haiku",
+        "Name": "Haiku",
+        "Description": "Plasma style inspired by the Haiku / BeOS desktop",
+        "Description[de]": "Plasma-Stil im Stil der Haiku-/BeOS-Oberfläche",
+        "Authors": [
+            {
+                "Name": "Gerald Greiling"
+            }
+        ],
+        "License": "MIT",
+        "Version": "1.0.0",
+        "Website": "https://github.com/geraldgreiling/haiku-plasma-theme",
+        "Category": ""
+    },
+    "X-Plasma-API": "5.0",
+    "X-Plasma-API-Minimum-Version": "6.0"
+}

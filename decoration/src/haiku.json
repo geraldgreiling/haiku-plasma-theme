@@ -1,0 +1,16 @@
+{
+    "KPlugin": {
+        "Description": "Haiku/BeOS style window decoration with the classic yellow tab",
+        "Description[de]": "Fensterdekoration im Haiku-/BeOS-Stil mit dem klassischen gelben Reiter",
+        "EnabledByDefault": true,
+        "Name": "Haiku",
+        "Name[de]": "Haiku"
+    },
+    "org.kde.kdecoration3": {
+        "blur": false,
+        "recommendedBorderSize": "Normal",
+        "styles": [
+            "titled"
+        ]
+    }
+}

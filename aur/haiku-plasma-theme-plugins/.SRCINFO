@@ -1,0 +1,20 @@
+pkgbase = haiku-plasma-theme-plugins
+	pkgdesc = Haiku/BeOS look for KDE Plasma 6: Qt6 widget style and KWin window decoration with the classic yellow tab
+	pkgver = 1.0.0
+	pkgrel = 1
+	url = https://github.com/geraldgreiling/haiku-plasma-theme
+	arch = x86_64
+	arch = aarch64
+	license = MIT
+	makedepends = cmake
+	depends = qt6-base
+	depends = kdecoration>=6.3
+	depends = kcoreaddons
+	depends = kwin
+	depends = gcc-libs
+	depends = glibc
+	optdepends = plasma-workspace: apply the Haiku global theme from store.kde.org
+	source = haiku-plasma-theme-plugins-1.0.0.tar.gz::https://github.com/geraldgreiling/haiku-plasma-theme/archive/refs/tags/v1.0.0.tar.gz
+	sha256sums = SKIP
+
+pkgname = haiku-plasma-theme-plugins

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Haiku (Aurorae fallback)
+Comment=Haiku-like decoration without compiled plugin
+X-KDE-PluginInfo-Name=Haiku
+X-KDE-PluginInfo-License=MIT
+X-KDE-PluginInfo-Version=1.0.0
+X-Plasma-API=javascript
+X-KDE-ServiceTypes=KWin/Decoration
