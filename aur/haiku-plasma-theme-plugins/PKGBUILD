@@ -12,7 +12,7 @@ depends=('qt6-base' 'kdecoration>=6.3' 'kcoreaddons' 'kwin' 'gcc-libs' 'glibc')
 makedepends=('cmake')
 optdepends=('plasma-workspace: apply the Haiku global theme from store.kde.org')
 source=("${pkgname}-${pkgver}.tar.gz::${url}/archive/refs/tags/v${pkgver}.tar.gz")
-sha256sums=('SKIP')  # nach dem Taggen mit "updpkgsums" ersetzen
+sha256sums=('06eaece31ab7aed4d47a8e632908d61206422d599a46a27eba254643a9d2e869')
 
 build() {
   local _src="${_reponame}-${pkgver}"
