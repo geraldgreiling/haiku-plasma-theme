@@ -25,7 +25,9 @@ A global Plasma 6 theme in the style of the Haiku R1 desktop: yellow window tabs
 
 ## Installation
 
-**Arch / CachyOS / Manjaro:** the compiled parts (window decoration and application style) are available as AUR package `haiku-plasma-theme-plugins`. Global theme, Plasma style, colour scheme, icons, cursors and the Aurorae decoration are available on [store.kde.org](https://store.kde.org) (search for "Haiku").
+**Arch / CachyOS / Manjaro:** ~~the compiled parts (window decoration and application style) are available as AUR package `haiku-plasma-theme-plugins`.~~ 
+As new account registration on AUR is temporarily closed, I can't provide an AUR package currently. You can still install from source (see below) if you want the native application style and window decoration (which IMHO looks much better than the aurorae fallback).
+Global theme, Plasma style, colour scheme, icons, cursors and the Aurorae decoration are available on [store.kde.org](https://store.kde.org) (search for "Haiku").
 
 **From source:**
 
@@ -68,9 +70,9 @@ UseColorScheme=false
 
 Changes apply after `qdbus6 org.kde.KWin /KWin reconfigure` or when the next window opens.
 
-## Distribution (AUR + store.kde.org)
+## Distribution (~~AUR +~~ store.kde.org)
 
-- **AUR:** `haiku-plasma-theme-plugins` – window decoration and application style (C++), PKGBUILD in `aur/haiku-plasma-theme-plugins/`.
+- ~~**AUR:** `haiku-plasma-theme-plugins` – window decoration and application style (C++), PKGBUILD in `aur/haiku-plasma-theme-plugins/`.~~
 - **store.kde.org:** global theme, Plasma style, colour scheme, icons, cursors and the Aurorae decoration. `tools/build_store.sh` creates one folder per store entry in `dist/store/`, containing the file, screenshots and description text.
 - Step-by-step instructions and upload order: `store/README.md`.
 - `tools/set_github_user.sh <name>` replaces the GitHub user placeholder in the PKGBUILD, metadata and store texts.
