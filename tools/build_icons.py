@@ -14,6 +14,8 @@ _gid = [0]
 
 def tint(c, t):
     c = c.lstrip("#")
+    if len(c) == 3:
+        c = "".join(ch * 2 for ch in c)
     v = [int(c[i:i + 2], 16) for i in (0, 2, 4)]
     f = (lambda x: 255 - (255 - x) * t) if t < 1 else (lambda x: x * (2 - t))
     return "#%02x%02x%02x" % tuple(max(0, min(255, int(f(x)))) for x in v)
@@ -522,6 +524,9 @@ def i_games(ic):
 
 # ----------------------------------------------------------------------------
 def main():
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import icons_gear
+    icons_gear.register(globals())
     cats = {}
     for key, (cat, names, fn) in ICONS.items():
         _gid[0] = 0

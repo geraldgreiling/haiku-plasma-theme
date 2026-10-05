@@ -15,6 +15,6 @@ pkgbase = haiku-plasma-theme-plugins
 	depends = glibc
 	optdepends = plasma-workspace: apply the Haiku global theme from store.kde.org
 	source = haiku-plasma-theme-plugins-1.0.0.tar.gz::https://github.com/geraldgreiling/haiku-plasma-theme/archive/refs/tags/v1.0.0.tar.gz
-	sha256sums = SKIP
+	sha256sums = 06eaece31ab7aed4d47a8e632908d61206422d599a46a27eba254643a9d2e869
 
 pkgname = haiku-plasma-theme-plugins
