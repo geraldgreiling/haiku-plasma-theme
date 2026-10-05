@@ -1,53 +1,58 @@
-# Haiku / BeOS Theme für KDE Plasma 6
+# Haiku / BeOS Theme for KDE Plasma 6
 
-Globales Plasma-6-Theme im Stil der Haiku-R1-Oberfläche: gelbe Fenster-Reiter, graue Bevel-Widgets, blauer Desktop.
+A global Plasma 6 theme in the style of the Haiku R1 desktop: yellow window tabs, grey bevelled widgets, blue desktop.
 
-![Vorschau](plasma/look-and-feel/org.haiku.desktop/contents/previews/fullscreenpreview.jpg)
+![Preview](plasma/look-and-feel/org.haiku.desktop/contents/previews/fullscreenpreview.jpg)
 
-## Bestandteile
+## Components
 
-| Komponente | Ordner | Umsetzung |
+| Component | Folder | Implementation |
 |---|---|---|
-| Globales Theme | `plasma/look-and-feel/org.haiku.desktop` | Defaults, Deskbar-Layout (Panel oben), Splash-Screen mit aufleuchtenden Icons |
-| Farben | `colors/HaikuR1.colors` | KDE-Farbschema mit den Haiku-UI-Farben, inkl. `[WM]` (gelber Tab) |
-| Anwendungs-Stil | `style/` | Natives Qt6-Style-Plugin (C++, `QProxyStyle` auf Fusion-Basis) |
-| Fensterdekoration | `decoration/` | KDecoration3-Plugin (C++): Tab nur so breit wie der Titel, Schließen-Knopf links, Zoom rechts |
-| Dekoration (Fallback) | `aurorae/themes/Haiku` | Aurorae-SVG-Theme ohne Kompilieren (Titelleiste über volle Breite) |
-| Plasma-Stil | `plasma/desktoptheme/haiku` | Panel, Dialoge, Tooltips, Taskleiste, Buttons, Eingabefelder; Rest erbt von Breeze |
-| Symbole | `icons/Haiku` | 48 eigene Icons (Ordner, Orte, Laufwerke, Dateitypen, Kern-Apps) + ~130 Aliasnamen, Rest erbt von Breeze |
-| Mauszeiger | `cursors/Haiku-Cursors` | Xcursor-Theme, 21 Zeiger + Aliasnamen, 24/32/48/64 px, animierter Warte-Zeiger |
+| Global theme | `plasma/look-and-feel/org.haiku.desktop` | Defaults, Deskbar layout (panel at the top), splash screen with icons lighting up |
+| Colours | `colors/HaikuR1.colors` | KDE colour scheme with Haiku's interface colours, including `[WM]` (yellow tab) |
+| Application style | `style/` | Native Qt6 style plugin (C++, `QProxyStyle` based on Fusion) |
+| Window decoration | `decoration/` | KDecoration3 plugin (C++): tab only as wide as the title, close button left, zoom right |
+| Decoration (fallback) | `aurorae/themes/Haiku` | Aurorae SVG theme, no compiling needed (title bar spans the full width) |
+| Plasma style | `plasma/desktoptheme/haiku` | Panel, dialogs, tooltips, task manager, buttons, text fields; everything else inherits from Breeze |
+| Icons | `icons/Haiku` | 48 original icons (folders, places, drives, file types, core apps) + ~130 alias names, everything else inherits from Breeze |
+| Cursors | `cursors/Haiku-Cursors` | Xcursor theme, 21 cursors + alias names, 24/32/48/64 px, animated busy cursor |
 
-## Voraussetzungen
+## Requirements
 
-- Plasma **6.3 oder neuer** (die Dekoration nutzt die KDecoration3-API; geprüft gegen die Header von 6.3.0, 6.4.5 und dem aktuellen Entwicklungsstand)
-- Zum Bauen (CachyOS/Arch): `sudo pacman -S --needed base-devel cmake qt6-base kdecoration kcoreaddons`
-  – das Installationsskript prüft das selbst und fragt nach.
+- Plasma **6.3 or newer** (the decoration uses the KDecoration3 API; checked against the headers of 6.3.0, 6.4.5 and the current development branch)
+- For building (Arch / CachyOS): `sudo pacman -S --needed base-devel cmake qt6-base kdecoration kcoreaddons`
+  – the install script checks this itself and asks before installing anything.
 
 ## Installation
 
+**Arch / CachyOS / Manjaro:** the compiled parts (window decoration and application style) are available as AUR package `haiku-plasma-theme-plugins`. Global theme, Plasma style, colour scheme, icons, cursors and the Aurorae decoration are available on [store.kde.org](https://store.kde.org) (search for "Haiku").
+
+**From source:**
+
 ```bash
-cd ~/Claude/BeOS_Theme/haiku-theme
-./install.sh            # baut beide Plugins (sudo für die Qt-Plugin-Ordner), installiert und aktiviert alles
-./install.sh --layout   # wie oben, setzt zusätzlich Panel-Layout und blauen Desktop (ersetzt dein aktuelles Panel!)
-./install.sh --no-build # nur Datenteile, Dekoration fällt dann auf Aurorae zurück
+git clone https://github.com/geraldgreiling/haiku-plasma-theme.git
+cd haiku-plasma-theme
+./install.sh            # builds both plugins (sudo for the Qt plugin folders), installs and applies everything
+./install.sh --layout   # same, plus panel layout and blue desktop (replaces your current panel!)
+./install.sh --no-build # data parts only; the decoration falls back to Aurorae
 ```
 
-Danach einmal ab- und wieder anmelden, damit Cursor und Anwendungsstil in allen Programmen greifen.
+Log out and back in afterwards so that cursors and the application style apply to all programs.
 
-Einzeln auswählbar sind die Teile auch über *Systemeinstellungen → Farben & Designs* (Globales Design „Haiku“, Anwendungsstil „Haiku“, Plasma-Stil „Haiku“, Fensterdekoration „Haiku“, Symbole „Haiku“, Zeiger „Haiku Cursors“).
+The parts can also be selected individually in *System Settings → Colors & Themes* (global theme "Haiku", application style "Haiku", Plasma style "Haiku", window decoration "Haiku", icons "Haiku", cursors "Haiku Cursors").
 
-Entfernen: `./uninstall.sh`
+Uninstall: `./uninstall.sh`
 
-## Haiku-typisches Verhalten
+## Haiku-like behaviour
 
-- Knöpfe: Schließen links, Minimieren + Zoom rechts im Tab (`ButtonsOnLeft=X`, `ButtonsOnRight=IA`). Haiku selbst hat keinen Minimieren-Knopf; wer ihn nicht will, entfernt ihn unter *Fensterdekoration → Titelleisten-Knöpfe*.
-- Doppelklick auf den Tab minimiert das Fenster (wie in Haiku).
-- Fokus-Anzeige in Blau (B_NAVIGATION_BASE_COLOR), Häkchen als Kreuz, Scrollbalken mit Pfeilen an beiden Enden.
+- Buttons: close on the left, minimise + zoom on the right of the tab (`ButtonsOnLeft=X`, `ButtonsOnRight=IA`). Haiku itself has no minimise button; remove it under *Window Decorations → Titlebar Buttons* if you don't want it.
+- Double-clicking the tab minimises the window (as in Haiku).
+- Blue keyboard focus indicator (B_NAVIGATION_BASE_COLOR) on input fields, check marks drawn as a cross, scroll bars with arrows at both ends.
 
-## Farben der Fensterdekoration
+## Window decoration colours
 
-Die C++-Dekoration zeichnet den Tab immer in Haiku-Gelb, unabhängig vom Farbschema. Grund: KWin ignoriert den `[WM]`-Abschnitt eines Farbschemas, sobald es einen `[Colors:Header]`-Satz enthält, und liefert dann für Titelleiste *und* Rahmen das graue Header-Grau.
-Anpassen lassen sich die Farben in `~/.config/haikudecorationrc`:
+The C++ decoration always draws the tab in Haiku yellow, regardless of the colour scheme. Reason: KWin ignores the `[WM]` section of a colour scheme as soon as it contains a `[Colors:Header]` set and then returns the grey header colour for both title bar *and* frame.
+The colours can be changed in `~/.config/haikudecorationrc`:
 
 ```ini
 [Colors]
@@ -57,46 +62,46 @@ ActiveFrame=224,224,224
 InactiveFrame=232,232,232
 ActiveText=0,0,0
 InactiveText=80,80,80
-# true = Farben doch aus dem KWin-Farbschema übernehmen
+# true = take the colours from the KWin colour scheme after all
 UseColorScheme=false
 ```
 
-Änderungen greifen nach `qdbus6 org.kde.KWin /KWin reconfigure` bzw. beim nächsten Fensteröffnen.
+Changes apply after `qdbus6 org.kde.KWin /KWin reconfigure` or when the next window opens.
 
-## Bereitstellung (AUR + store.kde.org)
+## Distribution (AUR + store.kde.org)
 
-- **AUR:** `haiku-plasma-theme-plugins` – Fensterdekoration und Anwendungsstil (C++), PKGBUILD in `aur/haiku-plasma-theme-plugins/`.
-- **store.kde.org:** globales Design, Plasma-Stil, Farbschema, Icons, Zeiger und die Aurorae-Dekoration. `tools/build_store.sh` erzeugt in `dist/store/` je Store-Eintrag einen Ordner mit Datei, Screenshots und Beschreibungstext.
-- Schritt-für-Schritt-Anleitung und Reihenfolge: `store/README.md`.
-- `tools/set_github_user.sh <name>` ersetzt den Platzhalter `geraldgreiling` in PKGBUILD, Metadaten und Store-Texten.
+- **AUR:** `haiku-plasma-theme-plugins` – window decoration and application style (C++), PKGBUILD in `aur/haiku-plasma-theme-plugins/`.
+- **store.kde.org:** global theme, Plasma style, colour scheme, icons, cursors and the Aurorae decoration. `tools/build_store.sh` creates one folder per store entry in `dist/store/`, containing the file, screenshots and description text.
+- Step-by-step instructions and upload order: `store/README.md`.
+- `tools/set_github_user.sh <name>` replaces the GitHub user placeholder in the PKGBUILD, metadata and store texts.
 
-Ohne Store installierbar sind alle Teile auch über „Aus Datei installieren“ in den Systemeinstellungen bzw. `kpackagetool6 -t Plasma/LookAndFeel -i Haiku-Global-Theme.tar.gz`.
+All parts can also be installed without the store via "Install from File…" in System Settings, or with `kpackagetool6 -t Plasma/LookAndFeel -i Haiku-Global-Theme.tar.gz`.
 
-## Bekannte Einschränkungen
+## Known limitations
 
-- **Nicht in einer laufenden Plasma-Sitzung getestet.** Der Anwendungsstil wurde gebaut und mit einer Widget-Galerie gerendert, die Zeichenroutinen der Dekoration als Vorschau gerendert; das Dekorations-Plugin selbst wurde nur gegen die KDecoration3-/KCoreAddons-Header kompiliert, nicht in KWin geladen.
-- Rechts neben dem Tab ist die Dekoration transparent, gehört für KWin aber zum oberen Rand: ein Klick dort startet eine Größenänderung nach oben statt durchzuklicken.
-- Tabs lassen sich nicht wie in Haiku per Shift-Ziehen verschieben; kein Stapeln/Kacheln über Tabs.
-- Die Haiku-Farbwerte stammen aus meinem Wissen über Haikus `InterfaceDefs.cpp`-Standardwerte (z. B. Tab 255/203/0, Panel 216/216/216, Desktop 51/102/152) und sind nicht gegen die aktuelle Quelle geprüft.
-- Kein GTK-Theme: GTK-Programme bekommen nur die Farben über die Plasma-GTK-Integration.
-- Icons decken nur den Kern ab; alles andere kommt von Breeze und wirkt daneben stilistisch anders.
-- Eine vertikale Deskbar oben rechts (Haiku-Standard) ist mit Plasma-Bordmitteln unpraktisch, weil das Startmenü-Applet dann die volle Panelbreite einnimmt. Das Layout setzt deshalb eine horizontale Deskbar oben (in Haiku ebenfalls eine Option).
+- Developed and tested on CachyOS (Arch) with Plasma 6; other distributions have not been tested.
+- To the right of the tab the decoration is transparent, but KWin still treats it as the top border: clicking there starts a resize instead of passing the click through.
+- Tabs cannot be moved with Shift-drag as in Haiku; no stacking/tiling via tabs.
+- The Haiku colour values follow the defaults from Haiku's `InterfaceDefs.cpp` (e.g. tab 255/203/0, panel 216/216/216, desktop 51/102/152) as far as known; they have not been verified against the current Haiku source.
+- No GTK theme: GTK programs only get the colours via Plasma's GTK integration.
+- The icons only cover the core set; everything else comes from Breeze and looks stylistically different.
+- A vertical Deskbar in the top right corner (Haiku's default) is impractical with Plasma's built-in tools, because the application launcher then takes up the full panel width. The layout therefore uses a horizontal Deskbar at the top (also an option in Haiku).
 
-## Assets neu erzeugen
+## Regenerating assets
 
-Icons, Cursor, Plasma-Stil und Aurorae-Fallback werden per Python erzeugt:
+Icons, cursors, Plasma style and the Aurorae fallback are generated with Python:
 
 ```bash
-tools/build_assets.sh   # Cursor brauchen zusätzlich rsvg-convert (librsvg) und xcursorgen (xorg-xcursorgen)
+tools/build_assets.sh   # cursors additionally need rsvg-convert (librsvg) and xcursorgen (xorg-xcursorgen)
 ```
 
-Widget-Galerie zum Testen des Anwendungsstils:
+Widget gallery for testing the application style:
 
 ```bash
 cmake -S style -B build/gallery -DBUILD_GALLERY=ON && cmake --build build/gallery
 build/gallery/haiku-gallery /tmp/gallery.png
 ```
 
-## Lizenz und Hinweis
+## License and notice
 
-MIT. Alle Grafiken (Icons, Zeiger, SVGs) sind eigene Entwürfe im Stil von Haiku; es wurden keine Haiku- oder BeOS-Grafiken übernommen, auch keine Logos. Kein offizielles Projekt von Haiku, Inc.; „Haiku“ und „BeOS“ sind Marken ihrer jeweiligen Inhaber.
+MIT. All artwork (icons, cursors, SVGs) is original and only inspired by Haiku; no Haiku or BeOS artwork has been copied, including logos. This is not an official project of Haiku, Inc.; "Haiku" and "BeOS" are trademarks of their respective owners.
