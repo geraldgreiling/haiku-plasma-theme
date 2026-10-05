@@ -527,6 +527,8 @@ def main():
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
     import icons_gear
     icons_gear.register(globals())
+    import icons_apps
+    icons_apps.register(globals())
     cats = {}
     for key, (cat, names, fn) in ICONS.items():
         _gid[0] = 0

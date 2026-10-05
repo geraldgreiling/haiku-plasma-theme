@@ -1385,6 +1385,9 @@ def register(ns):
         for p in pts:
             ell(ic, p[0], p[1], 5, 3.4, "#fff8d0", "#5a4a10", 1.2)
 
+    # helpers for other icon modules (icons_apps.py)
+    ns["H"] = {k: v for k, v in dict(locals()).items() if callable(v) and k not in ("app", "_")}
+
     # ------------------------------------------------------------------
     # register
     # ------------------------------------------------------------------

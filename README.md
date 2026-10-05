@@ -14,7 +14,7 @@ A global Plasma 6 theme in the style of the Haiku R1 desktop: yellow window tabs
 | Window decoration | `decoration/` | KDecoration3 plugin (C++): tab only as wide as the title, close button left, zoom right |
 | Decoration (fallback) | `aurorae/themes/Haiku` | Aurorae SVG theme, no compiling needed (title bar spans the full width) |
 | Plasma style | `plasma/desktoptheme/haiku` | Panel, dialogs, tooltips, task manager, buttons, text fields; everything else inherits from Breeze |
-| Icons | `icons/Haiku` | 48 original icons (folders, places, drives, file types, core apps) + ~130 alias names, everything else inherits from Breeze |
+| Icons | `icons/Haiku` | 272 original icons (folders, places, drives, file types, core apps, every KDE Gear application and ~60 popular third-party apps) + ~470 alias names, everything else inherits from Breeze |
 | Cursors | `cursors/Haiku-Cursors` | Xcursor theme, 21 cursors + alias names, 24/32/48/64 px, animated busy cursor |
 
 ## Requirements
@@ -86,7 +86,8 @@ All parts can also be installed without the store via "Install from File…" in 
 - Tabs cannot be moved with Shift-drag as in Haiku; no stacking/tiling via tabs.
 - The Haiku colour values follow the defaults from Haiku's `InterfaceDefs.cpp` (e.g. tab 255/203/0, panel 216/216/216, desktop 51/102/152) as far as known; they have not been verified against the current Haiku source.
 - No GTK theme: GTK programs only get the colours via Plasma's GTK integration.
-- The icons only cover the core set; everything else comes from Breeze and looks stylistically different.
+- The icons cover folders, places, file types, all KDE Gear applications and about 60 popular third-party apps; everything else (other apps, action and status icons) comes from Breeze and looks stylistically different.
+- Third-party apps (browsers, LibreOffice, GIMP, VLC, …) get function icons, not their logos: brand logos are trademarks and are intentionally not redrawn. Browsers are told apart by colour and initial.
 - A vertical Deskbar in the top right corner (Haiku's default) is impractical with Plasma's built-in tools, because the application launcher then takes up the full panel width. The layout therefore uses a horizontal Deskbar at the top (also an option in Haiku).
 
 ## Regenerating assets
